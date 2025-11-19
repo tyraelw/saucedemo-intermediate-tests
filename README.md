@@ -4,22 +4,22 @@ Intermediate-level UI automation project demonstrating data-driven testing, cust
 
 ## 📋 Project Overview
 
-This project showcases intermediate Cypress testing skills through 8 tests organized in 3 test suites. It demonstrates custom command usage, data-driven testing with JavaScript arrays and `forEach`, conditional test logic, and complex test workflows including cart management and checkout navigation.
+This project showcases intermediate Cypress testing patterns through 8 tests organized in 3 test suites. It demonstrates custom command usage, data-driven testing with JavaScript arrays and `forEach`, conditional test logic, and complex test workflows including cart management and checkout navigation.
 
-## 🎯 What I Learned
+## 🎯 Skills Demonstrated
 
-This project demonstrates my ability to:
+This project demonstrates proficiency in:
 
-- **Create and use custom commands** to reduce code duplication
-- **Implement data-driven testing** using arrays and `forEach` loops
-- **Apply conditional logic** in tests for different user scenarios
-- **Organize tests into logical suites** with multiple `describe` blocks
-- **Use advanced selectors** including `.find()` for nested elements
-- **Chain complex user workflows** across multiple pages
-- **Set up complex test state** in `beforeEach` hooks
-- **Validate dynamic content** like cart badge counters
-- **Test negative scenarios** (locked user) alongside positive ones
-- **Structure maintainable test code** using reusable patterns
+- **Creating and using custom commands** to reduce code duplication
+- **Implementing data-driven testing** using arrays and `forEach` loops
+- **Applying conditional logic** in tests for different user scenarios
+- **Organizing tests into logical suites** with multiple `describe` blocks
+- **Using advanced selectors** including `.find()` for nested elements
+- **Chaining complex user workflows** across multiple pages
+- **Setting up complex test state** in `beforeEach` hooks
+- **Validating dynamic content** like cart badge counters
+- **Testing negative scenarios** (locked user) alongside positive ones
+- **Structuring maintainable test code** using reusable patterns
 
 ## 📊 Test Coverage
 
@@ -255,34 +255,26 @@ saucedemo-intermediate-tests/
 - Complete workflow testing (add → view → remove)
 - Comprehensive cart and checkout validation
 
-## 📈 Progression from Basic to Intermediate
-
-### Basic Project
-- ✅ Native Cypress commands
-- ✅ Simple, explicit tests
-- ✅ Independent test cases
-- ✅ Single test suite
-
-### Intermediate Project (This One)
-- ✅ **Custom commands** (`cy.login()`)
-- ✅ **Data-driven testing** (3 users, 1 test definition)
-- ✅ **Conditional logic** (different validations per user)
-- ✅ **Multiple test suites** (3 organized suites)
-- ✅ **Complex workflows** (login → add to cart → view cart)
-- ✅ **Advanced selectors** (`.find()` for nested elements)
-
-### What's Next: Advanced
-- Page Object Model architecture
-- Custom commands library
-- API mocking and stubbing
-- Network request interception
-- CI/CD pipeline integration
-
 ## 🔗 Related Projects
 
-- [SauceDemo Basic Tests](../saucedemo-basic-tests) - Foundation Cypress skills
-- [Cypress E-Commerce Advanced](../cypress-ecommerce-testing) - Page Object Model implementation
+- [SauceDemo Basic Tests](../saucedemo-basic-tests) - Core Cypress patterns
+- [Cypress E-Commerce Testing](../cypress-ecommerce-testing) - Page Object Model implementation
 - [API Intermediate Testing](../api-intermediate-testing) - Advanced API patterns with variable chaining
+
+## 📌 Portfolio Context
+
+This project is part of a structured portfolio demonstrating comprehensive UI automation expertise across different complexity levels. While my advanced projects like [Cypress E-Commerce Testing](../cypress-ecommerce-testing) showcase production-ready implementations with Page Object Model architecture, CI/CD pipelines, and component testing, this collection focuses on intermediate patterns that bridge fundamental and advanced concepts.
+
+**Focus Area:** Intermediate Cypress testing patterns
+- Custom command development
+- Data-driven test generation
+- Conditional test logic
+- Multi-suite organization
+- Complex workflow validation
+
+**Related Skill Levels:**
+- **Fundamental:** [SauceDemo Basic Tests](../saucedemo-basic-tests) - Core Cypress commands and patterns
+- **Advanced:** [Cypress E-Commerce Testing](../cypress-ecommerce-testing) - POM, CI/CD, component testing, fixtures
 
 ## 💡 Design Decisions
 
@@ -321,10 +313,11 @@ These tests follow intermediate-level best practices:
 - **Test Independence**: Each test can run independently despite shared setup
 - **Browser Compatibility**: Tested on Chrome, Firefox, Edge
 
-## 📧 Questions?
+## 📧 Contact
 
-Feel free to reach out if you have questions about this project or intermediate Cypress patterns!
+For questions about this project or intermediate Cypress patterns, feel free to reach out via [tyrael78w@gmail.com](mailto:tyrael78w@gmail.com)
 
 ---
 
-**Created as part of my QA Testing portfolio** | **Date: November 2025**
+**Part of QA Testing Portfolio** | **November 2025**
+
