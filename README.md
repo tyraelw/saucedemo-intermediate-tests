@@ -1,34 +1,20 @@
-# SauceDemo - Intermediate Cypress Tests
+# 🧪 SauceDemo - Intermediate Cypress Tests
+![Cypress](https://img.shields.io/badge/Cypress-17202C?style=flat&logo=cypress&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) ![E2E Testing](https://img.shields.io/badge/E2E-Testing-green)
 
 Intermediate-level UI automation project demonstrating data-driven testing, custom commands, conditional logic, and organized test suites using Cypress framework.
 
 ## 📋 Project Overview
 
-This project showcases intermediate Cypress testing patterns through 8 tests organized in 3 test suites. It demonstrates custom command usage, data-driven testing with JavaScript arrays and `forEach`, conditional test logic, and complex test workflows including cart management and checkout navigation.
-
-## 🎯 Skills Demonstrated
-
-This project demonstrates proficiency in:
-
-- **Creating and using custom commands** to reduce code duplication
-- **Implementing data-driven testing** using arrays and `forEach` loops
-- **Applying conditional logic** in tests for different user scenarios
-- **Organizing tests into logical suites** with multiple `describe` blocks
-- **Using advanced selectors** including `.find()` for nested elements
-- **Chaining complex user workflows** across multiple pages
-- **Setting up complex test state** in `beforeEach` hooks
-- **Validating dynamic content** like cart badge counters
-- **Testing negative scenarios** (locked user) alongside positive ones
-- **Structuring maintainable test code** using reusable patterns
+This project showcases intermediate Cypress testing patterns through 8 tests organized in 3 test suites. It demonstrates custom command usage, data-driven testing with JavaScript arrays and forEach, conditional test logic, and complex test workflows including cart management and checkout navigation.
 
 ## 📊 Test Coverage
 
 ### Suite 1: Data-Driven Login Tests (3 tests)
 
-Uses `forEach` to automatically generate tests for multiple user types:
+Uses forEach to automatically generate tests for multiple user types:
 
 | User Type | Expected Behavior |
-|-----------|------------------|
+|-----------|-------------------|
 | standard_user | Successfully logs in, reaches inventory page |
 | locked_out_user | Shows error message, login blocked |
 | problem_user | Successfully logs in, reaches inventory page |
@@ -48,11 +34,11 @@ Uses `forEach` to automatically generate tests for multiple user types:
 | should remove product from cart | Tests product removal functionality |
 | should navigate to checkout | Validates checkout button navigation |
 
-**Total: 8 automated tests across 3 test suites**
+**Total:** 8 automated tests across 3 test suites
 
 ## 🛠️ Technologies Used
 
-- **Cypress** v13+ - Modern E2E testing framework
+- **Cypress v13+** - Modern E2E testing framework
 - **JavaScript** - Test scripting and data structures
 - **Custom Commands** - Reusable test components
 - **Data-Driven Patterns** - Array-based test generation
@@ -60,7 +46,6 @@ Uses `forEach` to automatically generate tests for multiple user types:
 ## 🔑 Key Concepts Demonstrated
 
 ### 1. Data-Driven Testing
-
 ```javascript
 // Define test data
 const users = ['standard_user', 'locked_out_user', 'problem_user']
@@ -79,7 +64,6 @@ users.forEach(user => {
 - Maintains consistency across similar tests
 
 ### 2. Custom Commands
-
 ```javascript
 // Define once in commands.js
 Cypress.Commands.add('login', (username, password) => {
@@ -99,7 +83,6 @@ cy.login('standard_user', 'secret_sauce')
 - Cleaner, more readable tests
 
 ### 3. Conditional Test Logic
-
 ```javascript
 if (user === 'locked_out_user') {
   // Validate error message for locked user
@@ -118,7 +101,6 @@ if (user === 'locked_out_user') {
 - Flexible validation based on context
 
 ### 4. Test Suite Organization
-
 ```javascript
 describe('Login Tests', () => {
   // Tests related to login
@@ -139,7 +121,6 @@ describe('Cart Tests', () => {
 - Easier to run specific suites
 
 ### 5. Complex Test Setup
-
 ```javascript
 beforeEach(() => {
   cy.visit('https://www.saucedemo.com/')
@@ -163,15 +144,15 @@ beforeEach(() => {
 ### Installation
 
 1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd saucedemo-intermediate-tests
-   ```
+```bash
+git clone <repository-url>
+cd saucedemo-intermediate-tests
+```
 
 2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 
 ### Running Tests
 
@@ -179,9 +160,9 @@ beforeEach(() => {
 ```bash
 npx cypress open
 ```
-- Select "E2E Testing"
-- Choose a browser
-- Click on `intermediate-test.cy.js`
+1. Select "E2E Testing"
+2. Choose a browser
+3. Click on `intermediate-test.cy.js`
 
 **Run Tests in Headless Mode**
 ```bash
@@ -213,7 +194,6 @@ Shopping Cart Tests
 ```
 
 ## 📁 Project Structure
-
 ```
 saucedemo-intermediate-tests/
 ├── cypress/
@@ -225,17 +205,17 @@ saucedemo-intermediate-tests/
 │   └── fixtures/                    # Test data (if needed)
 ├── cypress.config.js                # Cypress configuration
 ├── package.json                     # Project dependencies
-└── README.md                        # This file
+└── README.md                        # Documentation
 ```
 
-## 🎓 Skills Demonstrated
+## 🎯 Skills Demonstrated
 
 ### Advanced Cypress Patterns
 - Custom command creation and usage
-- Data-driven test generation with `forEach`
+- Data-driven test generation with forEach
 - Conditional test logic with if/else
 - Multiple test suite organization
-- Complex `beforeEach` setup workflows
+- Complex beforeEach setup workflows
 
 ### JavaScript Proficiency
 - Array manipulation and iteration
@@ -255,41 +235,20 @@ saucedemo-intermediate-tests/
 - Complete workflow testing (add → view → remove)
 - Comprehensive cart and checkout validation
 
-## 🔗 Related Projects
-
-- [SauceDemo Basic Tests](../saucedemo-basic-tests) - Core Cypress patterns
-- [Cypress E-Commerce Testing](../cypress-ecommerce-testing) - Page Object Model implementation
-- [API Intermediate Testing](../api-intermediate-testing) - Advanced API patterns with variable chaining
-
-## 📌 Portfolio Context
-
-This project is part of a structured portfolio demonstrating comprehensive UI automation expertise across different complexity levels. While my advanced projects like [Cypress E-Commerce Testing](../cypress-ecommerce-testing) showcase production-ready implementations with Page Object Model architecture, CI/CD pipelines, and component testing, this collection focuses on intermediate patterns that bridge fundamental and advanced concepts.
-
-**Focus Area:** Intermediate Cypress testing patterns
-- Custom command development
-- Data-driven test generation
-- Conditional test logic
-- Multi-suite organization
-- Complex workflow validation
-
-**Related Skill Levels:**
-- **Fundamental:** [SauceDemo Basic Tests](../saucedemo-basic-tests) - Core Cypress commands and patterns
-- **Advanced:** [Cypress E-Commerce Testing](../cypress-ecommerce-testing) - POM, CI/CD, component testing, fixtures
-
 ## 💡 Design Decisions
 
 ### Why Custom Commands?
 
-The `cy.login()` command is used **7 times** across the test file:
+The `cy.login()` command is used 7 times across the test file:
 - 3 times in data-driven login tests
 - 1 time in Product Tests beforeEach
 - 1 time in Cart Tests beforeEach
 
-Without the custom command, we'd repeat these 4 lines of code 7 times = **28 lines of duplicated code**. The custom command reduces this to 7 single-line calls and maintains the logic in one place.
+Without the custom command, we'd repeat these 4 lines of code 7 times = 28 lines of duplicated code. The custom command reduces this to 7 single-line calls and maintains the logic in one place.
 
 ### Why Data-Driven Testing?
 
-Instead of writing 3 separate, nearly identical login tests, the `forEach` loop generates them automatically from an array. To add a new user test, simply add the username to the array—no need to copy and paste test code.
+Instead of writing 3 separate, nearly identical login tests, the forEach loop generates them automatically from an array. To add a new user test, simply add the username to the array—no need to copy and paste test code.
 
 ### Why Conditional Logic?
 
@@ -299,25 +258,38 @@ The `locked_out_user` behaves differently than other users. Rather than creating
 
 These tests follow intermediate-level best practices:
 
-1. **Code Reusability** - Custom commands eliminate duplication
-2. **Data-Driven** - Tests scale easily with data changes
-3. **Organized** - Logical suite structure improves maintainability
-4. **Realistic Workflows** - Tests follow actual user journeys
-5. **Flexible** - Conditional logic handles multiple scenarios
+- **Code Reusability** - Custom commands eliminate duplication
+- **Data-Driven** - Tests scale easily with data changes
+- **Organized** - Logical suite structure improves maintainability
+- **Realistic Workflows** - Tests follow actual user journeys
+- **Flexible** - Conditional logic handles multiple scenarios
 
 ## 📝 Notes
 
-- **Application Under Test**: [SauceDemo](https://www.saucedemo.com/)
-- **Test Users**: Available on login page
-- **Custom Command**: `cy.login()` defined in `cypress/support/commands.js`
-- **Test Independence**: Each test can run independently despite shared setup
-- **Browser Compatibility**: Tested on Chrome, Firefox, Edge
+- **Application Under Test:** SauceDemo
+- **Test Users:** Available on login page
+- **Custom Command:** `cy.login()` defined in `cypress/support/commands.js`
+- **Test Independence:** Each test can run independently despite shared setup
+- **Browser Compatibility:** Tested on Chrome, Firefox, Edge
+
+## 🔗 Related Projects
+
+- [SauceDemo Basic Tests](link) - Core Cypress patterns
+- [Cypress E-Commerce Testing](link) - Page Object Model implementation
+- [API Intermediate Testing](link) - Advanced API patterns with variable chaining
+
+## 👤 Author
+
+**Isrrael Andres Toro Alvarez**
+
+- GitHub: [@tyraelw](https://github.com/tyraelw)
+- LinkedIn: [Isrrael Toro Alvarez](https://linkedin.com/in/your-profile)
+- Email: tyrael78w@gmail.com
 
 ## 📧 Contact
 
-For questions about this project or intermediate Cypress patterns, feel free to reach out via [tyrael78w@gmail.com](mailto:tyrael78w@gmail.com)
+For questions about this project or intermediate Cypress patterns: tyrael78w@gmail.com
 
 ---
 
-**Part of QA Testing Portfolio** | **November 2025**
-
+*Part of QA Testing Portfolio | November 2025*
